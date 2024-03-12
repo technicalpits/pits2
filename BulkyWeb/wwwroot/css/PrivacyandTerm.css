@@ -1,0 +1,246 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/*Header and Footer*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 50px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2); /* Shadow line under header */
+}
+
+#branding img {
+    width: 200px; /* Adjust as necessary */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                color: #6B2A81; /* Gold color for active/hover state */
+            }
+
+            /* Add a bottom border to the active menu item */
+            nav ul li a.active {
+                border-bottom: 2px solid #520B54;
+            }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    #branding,
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+        nav ul {
+            flex-direction: column;
+        }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+    .footer .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer ul li {
+            padding: 0.5rem 0;
+        }
+
+            .footer ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+                .footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+
+.address ul {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 4.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column; /* Change to a single column layout */
+        align-items: center; /* Center align items */
+    }
+
+    .footer > div {
+        width: 100%; /* Make each column take up full width */
+        margin: 10px 0; /* Add some space between columns */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > div {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center; /* Center-align content */
+    }
+
+    .footer ul {
+        text-align: center; /* Center-align list items */
+    }
+
+    .address ul {
+        padding-right: 0; /* Reset padding for address list */
+    }
+
+    .tab {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer ul {
+        padding-left: 0; /* Reset padding for all lists */
+    }
+
+    .address ul {
+        padding-left: 0; /* Reset padding for address list */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar div,
+    .navbar a {
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section content {
+        size: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .navbar div,
+        .navbar a {
+            padding: 10px;
+            text-align: center;
+        }
+}
+
+.section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.location {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    padding-left: 100px;
+}
+
+.State1 {
+    font-size: 20px;
+}
+
+.State2 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.year {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .location {
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .location {
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .location {
+        padding-right: 50px;
+    }
+}

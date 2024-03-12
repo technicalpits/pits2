@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@ViewData["Title"] - Power IT Solutions</title>
+    
+    <link rel="stylesheet" href="~/css/Style.css" />
+
+</head>
+<body>
+    <header>
+        <div id="branding">
+            <img src="~/Image/Universal/logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Founder" asp-action="Index">Founder</a></li>
+                <li><a asp-controller="AboutUs" asp-action="Index">About Us</a></li>
+                <li><a asp-controller="Services" asp-action="Index">Services</a></li>
+                <li><a asp-controller="ContactUs" asp-action="Index">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+            <div class="container">
+                <div>
+                    <img src="~/Image/Universal/footer logo.png" alt="Power IT Malaysia Logo" style="width: 200px;"> 
+                    <p>Follow us on:</p>
+                
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><asp-area ="" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Founder</a></li>
+                        <li><a href="#">Our Approach</a></li>
+                        <li><a href="#">Industrial Served</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#" >Resources/Downloads</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Get Quote</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li><a href="#" class="social-icon"><i class="fa fa-phone"></i></a> Phone: 03-48108370</li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-facebook-square"></i></a> Email: aedi@powerit.my</li>
+                        <li><span class="tab"></span>saifulyazan@powerit.my</li>
+                    </ul>
+                </div>
+        
+                  <div class="location">
+                    <h3>Address</h3>
+                    <ul>
+                      <li class="State1">Perak:</li> 
+                  </ul>
+                    <ul>
+                      <li>Premier Suite, Level 5, Perak Techno Trade Centre (PTTC), Bandar Meru Raya, Off Jalan Jelapang, 30020 Ipoh, Perak Darul Ridzuan.</li>
+                    
+                    </ul>
+                    <ul>
+                      <li class="State2">Kuala Lumpur(HQ): </li>
+                  </ul>
+                    <ul>
+                      <li>Suite 05-04, Plaza 138, Jalan Ampang, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur</li> 
+                    </ul>
+                  </div>
+                </div>
+            <div class="year">
+              <hr>
+              <p>©2014 by Power IT Solutions Sdn Bhd</p>
+            </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

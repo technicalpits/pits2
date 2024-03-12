@@ -1,0 +1,557 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+/*Header*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 50px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2); /* Shadow line under header */
+}
+
+#branding img {
+    width: 200px; /* Adjust as necessary */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                color: #6B2A81; /* Gold color for active/hover state */
+            }
+
+            /* Add a bottom border to the active menu item */
+            nav ul li a.active {
+                border-bottom: 2px solid #520B54;
+            }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    #branding,
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+        nav ul {
+            flex-direction: column;
+        }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+}
+
+.cover {
+    width: 100%;
+    text-align: center;
+}
+
+    .cover img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.cover {
+    width: 100%;
+    background-image: url('Image/founder1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+}
+
+    .cover h1 {
+        font-size: 2.5em;
+        color: white;
+        margin: 0;
+    }
+
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+    .header p {
+        color: black;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+    .footer .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer ul li {
+            padding: 0.5rem 0;
+        }
+
+            .footer ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+                .footer ul li a:hover {
+                    text-decoration: underline;
+                }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+
+.founder-header {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+blockquote {
+    font-size: 3.3rem;
+    color: black;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+c {
+    color: purple;
+}
+
+.address ul {
+    padding-left: 10ic;
+    text-align: left;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 4.5em;
+}
+
+.gap {
+    height: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column; /* Change to a single column layout */
+        align-items: center; /* Center align items */
+    }
+
+    .footer > div {
+        width: 100%; /* Make each column take up full width */
+        margin: 10px 0; /* Add some space between columns */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > div {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center; /* Center-align content */
+    }
+
+    .footer ul {
+        text-align: center; /* Center-align list items */
+    }
+
+    .address ul {
+        padding-left: 0; /* Reset padding for address list */
+    }
+
+    .tab {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer ul {
+        padding-left: 0; /* Reset padding for all lists */
+    }
+
+    .address ul {
+        padding-left: 0; /* Reset padding for address list */
+    }
+}
+
+.faq-container {
+    background-color: #EDECEE;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-container {
+        width: 90%; /* Adjust the width for smaller screens */
+        padding: 10px; /* Adjust the padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-container {
+        width: 100%; /* Adjust the width for even smaller screens */
+        padding: 5px; /* Adjust the padding for even smaller screens */
+    }
+}
+
+.faq-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-list {
+        padding: 10px; /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust right padding for smaller screens */
+        padding-left: 20px; /* Adjust left padding for smaller screens */
+    }
+
+        .faq-list li {
+            padding: 10px; /* Adjust padding for list items on smaller screens */
+        }
+
+            .faq-list li::after {
+                right: 10px; /* Adjust the position of the arrow for smaller screens */
+            }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-list {
+        padding: 5px; /* Further adjust padding for even smaller screens */
+        padding-right: 10px; /* Further adjust right padding for even smaller screens */
+        padding-left: 10px; /* Further adjust left padding for even smaller screens */
+    }
+}
+
+
+.faq-list li {
+    background-color: #7139BE;
+    margin-bottom: 0px;
+    padding: 10px 20px;
+    border: 1px solid #DDD;
+    cursor: pointer;
+    position: relative;
+    z-index: 1; /* Set z-index to 1 for the li element */
+}
+
+    .faq-list li::after {
+        content: '▼';
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 1em;
+        color: white;
+    }
+
+    .faq-list li:hover {
+        background-color: #800080;
+        z-index: 2; /* Increase z-index on hover */
+    }
+
+.faq-list p {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+}
+
+/* Hidden content */
+.faq-list li {
+    position: relative;
+}
+
+    .faq-list li .hidden-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* Position it below the parent li */
+        left: 0;
+        width: 100%; /* Make it the same width as the parent li */
+        padding-top: 10px;
+        background-color: #fff; /* Change background color for the hidden content */
+        color: #333; /* Adjust the text color for the hidden content */
+        z-index: 3; /* Set a higher z-index for hidden content */
+    }
+
+    .faq-list li:hover .hidden-content {
+        display: block;
+    }
+
+.hidden-content t {
+    color: black;
+    font-size: 20px;
+}
+
+/*Combine with Customer Report*/
+
+.Apply {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center text in the container */
+    font-weight: bold;
+}
+
+    .Apply p {
+        font-size: 25px;
+    }
+
+.quote-form {
+    background: lightgray;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the form */
+    max-width: 1000px; /* Adjust the maximum width of the form container */
+}
+
+    .quote-form ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .quote-form li {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .quote-form label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .quote-form input,
+    .quote-form button {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .quote-form button {
+        width: 100%;
+        max-width: 300px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        transition: background-color 0.3s ease;
+    }
+
+        .quote-form button:hover {
+            transform: scale(1.1); /* Enlarge the button on hover */
+        }
+
+
+@media screen and (min-width: 600px) {
+    .quote-form li {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.quote-form .lbldesc {
+    margin-left: -50%;
+}
+
+.quote-form textarea {
+    width: 200%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 -50%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 150px; /* Adjust the height as needed */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Existing styles remain unchanged */
+
+/* Add the following media query for smaller screens */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust default font size for smaller screens */
+    }
+
+    .faq-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .faq-header {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .faq-list {
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+        .faq-list li {
+            padding: 10px;
+        }
+
+            .faq-list li::after {
+                right: 10px;
+            }
+
+            .faq-list li .hidden-content {
+                padding-top: 5px;
+            }
+
+        .faq-list p {
+            font-size: 18px;
+        }
+
+    .Title {
+        margin-bottom: 10px;
+    }
+
+    .Apply {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quote-form li {
+        width: 100%;
+    }
+
+    .quote-form textarea {
+        width: 100%;
+        margin: 0;
+    }
+
+    .quote-form .lbldesc {
+        text-align: left; /* Center the label for smaller screens */
+        margin-left: 0; /* Remove any margin for smaller screens */
+    }
+}
+
+
+.Title {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Add some space below the header */
+}
